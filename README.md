@@ -1,5 +1,5 @@
 # restful
-Rest API sample using Python3.3, MongDB and Flask
+Rest API sample using Python and Flask
 
 1> To get list of all states :
 URI : http://localhost:5000/states/api/v1.0/getstates
