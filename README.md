@@ -4,7 +4,8 @@ Rest API sample using Python3.3, MongDB and Flask
 1> To get list of all states :
 URI : http://localhost:5000/states/api/v1.0/getstates
 
-```Sample request : "curl -i http://localhost:5000/states/api/v1.0/getstates"
+```
+Sample request : "curl -i http://localhost:5000/states/api/v1.0/getstates"
 
 Response: 
 
@@ -34,7 +35,8 @@ Date: Sun, 28 Feb 2016 15:56:32 GMT
       "name": "Wyoming"
     }
   ]
-}```
+}
+```
 
 > Total 50 states data returned.
 
@@ -45,7 +47,8 @@ URI : http://localhost:5000/states/api/v1.0/getstates/[begIndex]?size=[int_Size]
 Replace : begIndex with the value of next_val returned in previous request's headers.
 	  int_size with the value of results to be displayed on each page.
 
-```Sample request: "curl -i http://localhost:5000/states/api/v1.0/getstates/0?size=10"
+```
+Sample request: "curl -i http://localhost:5000/states/api/v1.0/getstates/0?size=10"
 
 Response :
 
@@ -99,7 +102,8 @@ Date: Sun, 28 Feb 2016 16:05:04 GMT
       "name": "Georgia"
     }
   ]
-}```
+}
+```
 
 > Total 10 states data returned. 
 > "Next-Val: 10" returned in response header indicates the client to set [begIndex] as 10 in next request.
@@ -107,7 +111,8 @@ Date: Sun, 28 Feb 2016 16:05:04 GMT
 
 3> Resource not found request
 
-```Sample request: "curl -i http://localhost:5000/states/api/v1.0/getstates/abc"
+```
+Sample request: "curl -i http://localhost:5000/states/api/v1.0/getstates/abc"
 
 Response :
 
@@ -119,7 +124,8 @@ Date: Sun, 28 Feb 2016 17:12:40 GMT
 
 {
   "errorCode": "Not found"
-}```
+}
+```
 
 > No states returned.
 > "errorCode":"Not found" is returned whenever resource is not found.
