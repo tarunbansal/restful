@@ -1,6 +1,9 @@
 # restful
 Rest API sample using Python and Flask
 
+	To get started download the project zip and extract the files in your server.
+	Now run "python app.py" in the project directory.
+
 1> To get list of all states :
 URI : http://localhost:5000/states/api/v1.0/getstates
 
@@ -38,7 +41,7 @@ Date: Sun, 28 Feb 2016 15:56:32 GMT
 }
 ```
 
-> Total 50 states data returned.
+	Total 50 states data returned.
 
 2> To get paginated results from the API
 
@@ -105,9 +108,9 @@ Date: Sun, 28 Feb 2016 16:05:04 GMT
 }
 ```
 
-> Total 10 states data returned.
-> "Next-Val: 10" returned in response header indicates the client to set [begIndex] as 10 in next request.
-> "Next-Val" be returned as "-1" if no more records are left to be displayed.
+	Total 10 states data returned.
+	"Next-Val: 10" returned in response header indicates the client to set [begIndex] as 10 in next request.
+	"Next-Val" be returned as "-1" if no more records are left to be displayed.
 
 3> Resource not found request
 
@@ -127,5 +130,5 @@ Date: Sun, 28 Feb 2016 17:12:40 GMT
 }
 ```
 
-> No states returned.
-> "errorCode":"Not found" is returned whenever resource is not found.
+	No states returned.
+	"errorCode":"Not found" is returned whenever resource is not found.
