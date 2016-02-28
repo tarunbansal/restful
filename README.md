@@ -105,7 +105,7 @@ Date: Sun, 28 Feb 2016 16:05:04 GMT
 }
 ```
 
-> Total 10 states data returned. 
+> Total 10 states data returned.
 > "Next-Val: 10" returned in response header indicates the client to set [begIndex] as 10 in next request.
 > "Next-Val" be returned as "-1" if no more records are left to be displayed.
 
